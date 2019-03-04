@@ -14,23 +14,23 @@ A personal gallery application that you display your photos for others to see.Th
 - git clone` https://github.com/joseck12/josecksgallery.git`
 `Press Enter`.
 
-#creating a database
+# creating a database
 - `psql`
 - `CREATE DATABASE gallery`
 - Connect to the database `\c gallery`
 - Check if tables have been created `\dt`
 
-#Run migrations
+# Run migrations
 - `python3.6 manage.py migrate`
 - `python3.6 manage.py makemigrations gallerys`
 
-#Running the app
+# Running the app
 - `python3.6 manage.py runserver`
 
-#testing
+# testing
 - `python3.6 manage.py test gallerys`
 
-#SPECIFICATIONS
+# SPECIFICATIONS
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Displayed Images| *On the Home Page*| User is able to view different Images
@@ -45,7 +45,7 @@ A personal gallery application that you display your photos for others to see.Th
 - Postgres
 - javascript
 
-## Support and contact details
+## contact details
 - jogachi4@gmail.com
 - 0726825457
 
