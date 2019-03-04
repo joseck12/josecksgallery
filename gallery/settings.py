@@ -18,19 +18,12 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=l9\x8d\xfb\x93\xf3\xbe\x154Tq\xc6a\x84\x94\xe0\xa0\x06Xm=\x8dx\x12\x94Cu\x984S\xfe\xaf\xbf\x83x\xfd\x07\xde\xa3\xd4\xa7,\xda\x9bi\xd1k\x83D\x80'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS =  ['localhost', '127.0.0.1',config('ALLOWED_HOSTS', cast=Csv())]
-# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
