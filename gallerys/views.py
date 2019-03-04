@@ -15,12 +15,11 @@ def gallerys_today(request):
     return render(request, 'my-galleries/today-galleries.html', {"date": date,"gallerys":gallerys})
 
 def convert_dates(dates):
-    #function that gets the weekday number for the date
+
     day_number = dt.date.weekday(dates)
 
     days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 
-    #returning the actual day of the week
     day = days[day_number]
     return day
 
@@ -31,7 +30,6 @@ def past_days_gallerys(request,past_date):
 
     except ValueError:
         raise Http404()
-    #converts data from the string url
     if date == dt.date.today():
         return redirect (gallerys_of_today)
 
@@ -55,15 +53,6 @@ def category_image(request):
         print(x.image_upload)
     return render(request, 'my-galleries/category.html', {"gallerys":gallerys})
 
-
-# def cubism(request):
-#     cubist = Category.objects.filter(name='cubism')
-#     return render(request, 'my-galleries/cubism.html', {"cubist":cubist})
-
-# def realism(request):
-#     gallerys = Category.objects.filter(name='realism')
-#     print(gallerys[:])
-#     return render(request, 'my-galleries/realism.html', {"gallerys":gallerys})
 
 def location(request,location_id):
     locations = Image.objects.filter(location_id=location_id)
