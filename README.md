@@ -14,23 +14,23 @@ A personal gallery application that you display your photos for others to see.Th
 - git clone` https://github.com/joseck12/josecksgallery.git`
 `Press Enter`.
 
-# creating a database
+## Creating a database
 - `psql`
 - `CREATE DATABASE gallery`
 - Connect to the database `\c gallery`
 - Check if tables have been created `\dt`
 
-# Run migrations
+## Run migrations
 - `python3.6 manage.py migrate`
 - `python3.6 manage.py makemigrations gallerys`
 
-# Running the app
+## Running the app
 - `python3.6 manage.py runserver`
 
-# testing
+## Testing
 - `python3.6 manage.py test gallerys`
 
-# SPECIFICATIONS
+## SPECIFICATIONS
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Displayed Images| *On the Home Page*| User is able to view different Images
@@ -45,15 +45,15 @@ A personal gallery application that you display your photos for others to see.Th
 - Postgres
 - javascript
 
-## contact details
+## Contact details
 - jogachi4@gmail.com
 - 0726825457
 
-# Known Bugs
+## Known Bugs
 - There are no known bugs as yet,if you notice contact me on the above details.
 
-### License
+## License
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 Copyright (c) {2018} **{By Joseck Ogachi}**
 
-##live link to Heruko
+## Live link to Heruko
