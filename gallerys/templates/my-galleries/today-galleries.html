@@ -23,7 +23,6 @@ Jerzy Kosinski</p>
                         <p>This photo was taken in:{{gallerys_item.location}}   </p>
                         </div>
                   </div>
-                        <!-- Modal -->
                         <div class="modal fade" id="{{gallerys_item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                              <div class="modal-dialog" role="document">
                                    <div class="modal-content" id="modal">
@@ -34,7 +33,6 @@ Jerzy Kosinski</p>
                                     </button>
                                     </div>
                                     <div class="modal-body">
-                                    <img src="{{gallerys_item.image_upload.url}}" class="image-responsive" alt="Image"  height="700px" width="700px">
                                     </div>
                                     <div class="modal-footer">
                                     <h2 class="text-centre"> Title:{{ gallerys_item.title }}</h2>
@@ -64,16 +62,12 @@ Jerzy Kosinski</p>
 </div>
         <script>
             function copyLink(id) {
-              /* Get the text field */
               var copyText = document.getElementById( "thislinkhere-" + id );
 
-              /* Select the text field */
               copyText.select();
 
-              /* Copy the text inside the text field */
               document.execCommand( "copy" );
 
-              /* Alert the copied text */
               alert( "COPY THIS LINK AND SHARE!!: " + copyText.value );
             }
           </script>
